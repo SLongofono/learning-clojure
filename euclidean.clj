@@ -1,6 +1,5 @@
+;;; The Euclidean Algorithm as implemented for MATH 540
 (defn gcd [a b]
-  (if (= (mod a b) 0)
-    b
-    (gcd b (mod a b))
-  )
-)
+  (if (= b 0)
+    a
+    (gcd b (mod a b))))
